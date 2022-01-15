@@ -1,4 +1,4 @@
-package com.example.petclinix;
+package org.learning.petclinix.web;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
