@@ -1,5 +1,6 @@
 package org.learning.petclinix.web.controllers;
 
+import org.learning.petclinix.data.model.Owner;
 import org.learning.petclinix.data.service.OwnerService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,5 +20,10 @@ public class OwnerController {
     public String listOwner(Model model) {
         model.addAttribute("owners", ownerService.findAll());
         return "owners/list";
+    }
+
+    @RequestMapping("/find")
+    public String findOwners() {
+        return "notimplemented";
     }
 }
