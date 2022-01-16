@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'home')}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -9,10 +9,10 @@
 </head>
 <body>
 
-<table>
+<table class="table table-striped">
     <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
+        <th style="width: 150px">First Name</th>
+        <th style="width: 150px">Last Name</th>
     </tr>
     <tr th:each="owner : ${owners}">
         <th th:text="${owner.firstName}">"First Name"</th>
