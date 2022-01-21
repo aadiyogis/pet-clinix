@@ -1,10 +1,10 @@
-package org.learning.petclinix.web;
+package org.learning.petclinix;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@ComponentScan(basePackages = {"org.learning.petclinix.web","org.learning.petclinix.data"})
 @SpringBootApplication
 public class PetClinixApplication {
 
